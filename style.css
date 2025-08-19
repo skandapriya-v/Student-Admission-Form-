@@ -1,0 +1,179 @@
+/* General Body Styling */ 
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #f3f4f6; /* Light gray background */ 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; /* Full viewport height */ 
+            padding: 20px; 
+            box-sizing: border-box; /* Include padding in element's total 
+width and height */ 
+            margin: 0; /* Remove default body margin */ 
+        } 
+ 
+        /* Form Container Styling */ 
+        .form-container { 
+            background-color: #fff; 
+            padding: 32px; /* Equivalent to p-8 */ 
+            border-radius: 8px; /* Equivalent to rounded-lg */ 
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px 
+rgba(0, 0, 0, 0.05); /* Equivalent to shadow-xl */ 
+            width: 100%; 
+            max-width: 512px; /* Equivalent to max-w-lg */ 
+            border: 1px solid #e5e7eb; /* Equivalent to border border-gray-200 
+*/ 
+        } 
+
+ 
+ 
+        /* Form Title Styling */ 
+        .form-title { 
+            font-size: 30px; /* Equivalent to text-3xl */ 
+            font-weight: 800; /* Equivalent to font-extrabold */ 
+            text-align: center; 
+            color: #1f2937; /* Equivalent to text-gray-800 */ 
+            margin-bottom: 32px; /* Equivalent to mb-8 */ 
+        } 
+ 
+        /* Form Group (for each input field) */ 
+        .form-group { 
+            margin-bottom: 24px; /* Equivalent to space-y-6 */ 
+        } 
+ 
+        /* Label Styling */ 
+        .form-label { 
+            display: block; 
+            font-size: 14px; /* Equivalent to text-sm */ 
+            font-weight: 500; /* Equivalent to font-medium */ 
+            color: #374151; /* Equivalent to text-gray-700 */ 
+            margin-bottom: 4px; /* Equivalent to mb-1 */ 
+        } 
+ 
+        /* Input and Select Styling */ 
+        .form-input, 
+        .form-select { 
+            display: block; 
+            width: 100%; 
+            padding: 10px 16px; /* Equivalent to px-4 py-2 */ 
+            border: 1px solid #d1d5db; /* Equivalent to border border-gray-300 
+*/ 
+            border-radius: 6px; /* Equivalent to rounded-md */ 
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Equivalent to 
+shadow-sm */ 
+            font-size: 14px; /* Equivalent to sm:text-sm */ 
+            outline: none; /* Remove default outline */ 
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease
+in-out; 
+        } 
+ 
+        .form-input:focus, 
+        .form-select:focus { 
+            border-color: #3b82f6; /* Equivalent to focus:border-blue-500 */ 
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); /* Equivalent to 
+focus:ring-blue-500 */ 
+        } 
+ 
+
+ 
+        /* Checkbox Container Styling */ 
+        .checkbox-group { 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 24px; /* Added for consistency with form-group 
+spacing */ 
+        } 
+ 
+        /* Checkbox Styling */ 
+        .form-checkbox { 
+            height: 16px;  
+            width: 16px;  
+            color: #2563eb;  
+            border-color: #d1d5db;  
+            border-radius: 4px;  
+            outline: none; 
+            cursor: pointer; 
+        } 
+ 
+        .form-checkbox:focus { 
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); /* Equivalent to 
+focus:ring-blue-500 */ 
+        } 
+ 
+        /* Checkbox Label Styling */ 
+        .checkbox-label { 
+            margin-left: 8px; /* Equivalent to ml-2 */ 
+            font-size: 14px; /* Equivalent to text-sm */ 
+            color: #111827; /* Equivalent to text-gray-900 */ 
+        } 
+ 
+        .checkbox-label a { 
+            color: #2563eb; /* Equivalent to text-blue-600 */ 
+            text-decoration: none; 
+        } 
+ 
+        .checkbox-label a:hover { 
+            text-decoration: underline; 
+        } 
+ 
+        /* Submit Button Styling */ 
+        .submit-button { 
+            width: 100%; 
+            display: flex; 
+            justify-content: center; 
+            padding: 10px 16px; /* Equivalent to py-2 px-4 */ 
+            border: 1px solid transparent; /* Equivalent to border border
+transparent */ 
+
+ 
+            border-radius: 6px; /* Equivalent to rounded-md */ 
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Equivalent to 
+shadow-sm */ 
+            font-size: 14px; /* Equivalent to text-sm */ 
+            font-weight: 500; /* Equivalent to font-medium */ 
+            color: #fff; 
+            background-color: #2563eb; /* Equivalent to bg-blue-600 */ 
+            cursor: pointer; 
+            outline: none; 
+            transition: background-color 0.15s ease-in-out, box-shadow 0.15s 
+ease-in-out; 
+        } 
+ 
+        .submit-button:hover { 
+            background-color: #1d4ed8; /* Equivalent to hover:bg-blue-700 */ 
+        } 
+ 
+        .submit-button:focus { 
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5), 0 0 0 6px rgba(59, 
+130, 246, 0.2); /* focus:outline-none focus:ring-2 focus:ring-offset-2 
+focus:ring-blue-500 */ 
+        } 
+ 
+        /* Error Message Styling */ 
+        .error-message { 
+            color: #ef4444; /* Red color for errors */ 
+            font-size: 14px; /* 0.875rem */ 
+            margin-top: 4px; 
+        } 
+ 
+        /* Success Message Styling */ 
+        #success-message { 
+            margin-top: 24px; /* Equivalent to mt-6 */ 
+            padding: 16px; /* Equivalent to p-4 */ 
+            border-radius: 6px; /* Equivalent to rounded-md */ 
+            background-color: #d1fae5; /* Equivalent to bg-green-100 */ 
+            color: #065f46; /* Equivalent to text-green-700 */ 
+            /* display: none; Initially hidden */ 
+        } 
+ 
+        #success-message p { 
+            text-align: center; 
+            font-weight: 600; /* Equivalent to font-semibold */ 
+        } 
+ 
+        /* Hide utility class */ 
+        .hidden { 
+            display: none !important;} 
+ 
+
+ 
