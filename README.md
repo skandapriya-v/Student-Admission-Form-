@@ -17,7 +17,7 @@ Easily collect student details with real-time validation and a clean, profession
 
 ## 📸 Preview
 
-![Student Admission Form Screenshot](https://user-images.githubusercontent.com/placeholder/your-screenshot.png)
+![Student Admission Form Screenshot]C:\Users\nares\Pictures\Screenshots
 
 ---
 
